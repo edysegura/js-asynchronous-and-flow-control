@@ -22,7 +22,7 @@ function writeData(data) {
 
 function addToLog(data) {
     let defer = q.defer();
-    fs.writeFile('./data/myLog.txt', data.content + " callback 2", function (err) {
+    fs.writeFile('../data/myLog.txt', data.content + " callback 2", function (err) {
         if(err) defer.reject(err);
         defer.resolve(data);
     });
@@ -38,7 +38,7 @@ function notifyMeOnError(error) {
     console.log('Process has been failed: ', error);
 };
 
-readData('./data/myData.txt')
+readData('../data/myData.txt')
     .then(writeData)
     .then(addToLog)
     .then(notifyMeOnSuccess)

@@ -1,13 +1,10 @@
 {
   "name": "using-promise",
-  "version": "0.0.0",
-  "description": "A simple test using promise",
+  "version": "0.1.0",
+  "description": "A simple test using promise with q",
   "main": "callback-from-hell",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
-    "promise"
+    "promises"
   ],
   "author": "Edy Segura",
   "license": "MIT",

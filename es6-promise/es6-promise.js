@@ -23,7 +23,7 @@ function writeData(data) {
 
 function addToLog(data) {
     let promise = new Promise((resolve, reject) => {
-        fs.writeFile('./data/myLog.txt', data.content + " callback 2", function (err) {
+        fs.writeFile('../data/myLog.txt', data.content + " callback 2", function (err) {
             if(err) reject(err);
             resolve(data);
         });
@@ -40,7 +40,7 @@ function notifyMeOnError(error) {
     console.log('Process has been failed: ', error);
 };
 
-readData('./data/myData.txt')
+readData('../data/myData.txt')
     .then(writeData)
     .then(addToLog)
     .then(notifyMeOnSuccess)
