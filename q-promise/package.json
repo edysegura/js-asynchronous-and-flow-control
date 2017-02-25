@@ -2,10 +2,6 @@
   "name": "using-promise",
   "version": "0.1.0",
   "description": "A simple test using promise with q",
-  "main": "callback-from-hell",
-  "keywords": [
-    "promises"
-  ],
   "author": "Edy Segura",
   "license": "MIT",
   "dependencies": {
