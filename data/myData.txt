@@ -1,1 +1,1 @@
-Welcome to the promise world! ;) callback 1 callback 1
+Welcome to the promise world! ;)
