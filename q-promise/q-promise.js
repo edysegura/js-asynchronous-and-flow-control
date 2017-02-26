@@ -3,8 +3,8 @@ const fs = require('fs');
 
 function readData(filename) {
     let defer = q.defer();
-    fs.readFile(filename, 'utf8', function (err, content) {
-        if(err) defer.reject(err);
+    fs.readFile(filename, 'utf8', function (error, content) {
+        if(error) defer.reject(error);
         let data = { filename: filename, content: content };
         defer.resolve(data);
     });
@@ -13,8 +13,8 @@ function readData(filename) {
 
 function writeData(data) {
     let defer = q.defer();
-    fs.writeFile(data.filename, data.content + " callback 1", function (err) {
-        if(err) defer.reject(err);
+    fs.writeFile(data.filename, data.content + "\nadded text", function (error) {
+        if(error) defer.reject(error);
         defer.resolve(data);
     });
     return defer.promise;
@@ -22,18 +22,19 @@ function writeData(data) {
 
 function addToLog(data) {
     let defer = q.defer();
-    fs.writeFile('../data/myLog.txt', data.content + " callback 2", function (err) {
-        if(err) defer.reject(err);
+    let logMessage = `[${new Date().toISOString()}] ${data.filename} has been changed`;
+    fs.writeFile('../data/myLog.txt', logMessage, function (error) {
+        if(error) defer.reject(error);
         defer.resolve(data);
     });
     return defer.promise;
 };
 
-function notifyMeOnSuccess(data) {
-    console.log('Process finished!');
+function notifyOnSuccess(data) {
+    console.log('Process has been finished!');
 };
 
-function notifyMeOnError(error) {
+function notifyOnError(error) {
     // Handle any error from all above steps
     console.log('Process has been failed: ', error);
 };
@@ -41,5 +42,5 @@ function notifyMeOnError(error) {
 readData('../data/myData.txt')
     .then(writeData)
     .then(addToLog)
-    .then(notifyMeOnSuccess)
-    .catch(notifyMeOnError);
+    .then(notifyOnSuccess)
+    .catch(notifyOnError);
