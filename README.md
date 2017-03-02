@@ -17,6 +17,11 @@ fs.readFile(myDataFile, 'utf8', function (error, data) {
 });
 ```
 
+## Examples
+
+1. [Using Kriskowal Q library](q-promise)
+1. [Using ES6/2015 Promise constructor](es6-promise)
+
 ## References
 
 - [ES6 Promises](http://www.datchley.name/es6-promises/)
