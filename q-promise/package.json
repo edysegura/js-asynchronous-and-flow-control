@@ -4,6 +4,9 @@
   "description": "A simple test using promise with q",
   "author": "Edy Segura",
   "license": "MIT",
+  "scripts": {
+    "start": "node q-promise.js"
+  },
   "dependencies": {
     "q": "^1.1.2"
   }
