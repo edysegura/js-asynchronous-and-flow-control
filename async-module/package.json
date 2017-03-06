@@ -1,0 +1,13 @@
+{
+  "name": "async-module",
+  "version": "1.0.0",
+  "description": "A simple test using async module",
+  "author": "Edy Segura",
+  "license": "MIT",
+  "scripts": {
+    "start": "node async-module.js"
+  },
+  "dependencies": {
+    "async": "^2.1.5"
+  }
+}
