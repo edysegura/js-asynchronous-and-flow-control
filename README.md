@@ -22,9 +22,11 @@ fs.readFile(myDataFile, 'utf8', function (error, data) {
 1. [Using Kriskowal Q library](q-promise)
 1. [Using ES6/2015 Promise constructor](es6-promise)
 1. [Using Async Module](async-module)
+1. [Using CO Module](co-module)
 
 ## References
 
 - [ES6 Promises](http://www.datchley.name/es6-promises/)
 - [kriskowal Q](https://github.com/kriskowal/q)
 - [Node.js Async Best Practice & Avoiding Callback Hell](https://blog.risingstack.com/node-js-async-best-practices-avoiding-callback-hell-node-js-at-scale/)
+- [Hands-on with CO module](https://www.youtube.com/watch?v=IXsxtIZuY90)
