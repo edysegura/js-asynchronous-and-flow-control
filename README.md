@@ -21,6 +21,7 @@ fs.readFile(myDataFile, 'utf8', function (error, data) {
 
 1. [Using Kriskowal Q library](q-promise)
 1. [Using ES6/2015 Promise constructor](es6-promise)
+1. [Using Async Module](async-module)
 
 ## References
 
