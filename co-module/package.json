@@ -1,0 +1,13 @@
+{
+  "name": "co-module",
+  "version": "1.0.0",
+  "description": "A simple test using co module",
+  "author": "Edy Segura",
+  "license": "MIT",
+  "scripts": {
+    "start": "node co-module.js"
+  },
+  "dependencies": {
+    "co": "^4.6.0"
+  }
+}
