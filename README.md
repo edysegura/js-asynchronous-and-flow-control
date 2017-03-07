@@ -1,6 +1,6 @@
 # JavaScript Promise and Flow-control
 
-This example demonstrate how to organize your asynchronous JavaScript code using the promise and flow-control patterns to avoid callback from hell.
+These examples demonstrate how to organize your asynchronous JavaScript code using the promise and flow-control patterns to avoid callback from hell.
 
 ## Callback from hell
 
