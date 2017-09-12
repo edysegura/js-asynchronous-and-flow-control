@@ -19,11 +19,12 @@ fs.readFile(myDataFile, 'utf8', function (error, data) {
 
 ## Examples
 
-1. [Using Kriskowal Q library](q-promise)
-1. [Using ES6/2015 Promise constructor](es6-promise)
-1. [Using ES6/2015 Promise.all constructor](es6-promise-all)
-1. [Using Async Module](async-module)
-1. [Using CO Module](co-module)
+1. [Kriskowal Q library](q-promise)
+1. [ES6/2015 Promise constructor](es6-promise)
+1. [ES6/2015 Promise.all constructor](es6-promise-all)
+1. [Async Module](async-module)
+1. [CO Module](co-module)
+1. [Async/Await](async-await)
 
 ## References
 
@@ -32,3 +33,4 @@ fs.readFile(myDataFile, 'utf8', function (error, data) {
 - [Node.js Async Best Practice & Avoiding Callback Hell](https://blog.risingstack.com/node-js-async-best-practices-avoiding-callback-hell-node-js-at-scale/)
 - [Node Hero - Understanding Async Programming in Node.js](https://blog.risingstack.com/node-hero-async-programming-in-node-js/)
 - [Hands-on with CO module](https://www.youtube.com/watch?v=IXsxtIZuY90)
+- [Async/Await in JavaScript - What, Why and How - Fun Fun Function](https://www.youtube.com/watch?v=568g8hxJJp4)
