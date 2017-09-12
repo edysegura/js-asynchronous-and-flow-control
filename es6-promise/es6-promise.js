@@ -1,4 +1,4 @@
-const {readData, writeData, addToLog, notifyOnSuccess, notifyOnError} = require('../commons/promises')
+const { readData, writeData, addToLog, notifyOnSuccess, notifyOnError } = require('../commons/promises')
 
 readData('../data/myData.txt')
     .then(writeData)
