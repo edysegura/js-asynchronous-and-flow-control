@@ -4,7 +4,7 @@ async function main() {
     try {
         const fileContent = await readData('../data/myData.txt')
         const result = await writeData(fileContent)
-        await addToLog(fileContent)
+        await addToLog(result)
         notifyOnSuccess()
     }
     catch (error) {
