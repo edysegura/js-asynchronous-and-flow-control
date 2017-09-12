@@ -32,7 +32,7 @@ exports.addToLog = function (data) {
     return promise;
 };
 
-exports.notifyOnSuccess = function (data) {
+exports.notifyOnSuccess = function () {
     console.log('Process has been finished!');
 };
 
