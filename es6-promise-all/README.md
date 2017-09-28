@@ -1,6 +1,6 @@
 # ES6/2015 Promise.all
 
-This example is using ES6/2015 Promise constructor to demonstrate how to use it.
+This example is using ES6/2015 Promise.all method to demonstrate how to use it.
 
 ## How to run it
 
