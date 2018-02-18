@@ -1,8 +1,8 @@
-# JavaScript Promise and Flow-control
+# JavaScript Asynchronous and Flow-control
 
-These examples demonstrate how to organize your asynchronous JavaScript code using the promise and flow-control patterns to avoid callback from hell.
+These examples demonstrate how to organize your asynchronous JavaScript code using the promises, reactive and flow-control patterns to avoid JavaScript callback hell.
 
-## Callback from hell
+## JavaScript Callback Hell
 
 ```javascript
 fs.readFile(myDataFile, 'utf8', function (error, data) {
@@ -35,3 +35,4 @@ fs.readFile(myDataFile, 'utf8', function (error, data) {
 - [Node Hero - Understanding Async Programming in Node.js](https://blog.risingstack.com/node-hero-async-programming-in-node-js/)
 - [Hands-on with CO module](https://www.youtube.com/watch?v=IXsxtIZuY90)
 - [Async/Await in JavaScript - What, Why and How - Fun Fun Function](https://www.youtube.com/watch?v=568g8hxJJp4)
+- [Callbacks vs Promises vs RxJs Observables vs async/await](https://www.youtube.com/watch?v=jgWnccjXR4I)
