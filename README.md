@@ -19,13 +19,13 @@ fs.readFile(myDataFile, 'utf8', function (error, data) {
 
 ## Examples
 
-1. [Kriskowal Q library](q-promise)
-1. [ES6/2015 Promise constructor](es6-promise)
-1. [ES6/2015 Promise.all method](es6-promise-all)
-1. [ES6/2015 Promise.race method](es6-promise-race)
-1. [Async Module](async-module)
-1. [CO Module](co-module)
-1. [Async/Await](async-await)
+- [Kriskowal Q library](q-promise)
+- [ES6/2015 Promise constructor](es6-promise)
+- [ES6/2015 Promise.all method](es6-promise-all)
+- [ES6/2015 Promise.race method](es6-promise-race)
+- [Async Module](async-module)
+- [CO Module](co-module)
+- [Async/Await](async-await)
 
 ## References
 
