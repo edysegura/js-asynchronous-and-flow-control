@@ -36,8 +36,10 @@ fs.readFile(myDataFile, 'utf8', function (error, data) {
 - [Hands-on with CO module](https://www.youtube.com/watch?v=IXsxtIZuY90)
 - [Async/Await in JavaScript - What, Why and How - Fun Fun Function](https://www.youtube.com/watch?v=568g8hxJJp4)
 - [Callbacks vs Promises vs RxJs Observables vs async/await](https://www.youtube.com/watch?v=jgWnccjXR4I)
+- [Callback of heaven](https://www.youtube.com/watch?v=Ir9-EBbc9fg)
 
 ---
+
 In case you have doubt why I'm not using semicolon is because I got inspiration from these talks:
 
 - [Semicolons cannot save you!](https://www.youtube.com/watch?v=Qlr-FGbhKaI)
