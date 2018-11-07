@@ -26,6 +26,7 @@ fs.readFile(myDataFile, 'utf8', function(error, data) {
 - [Async Module](async-module)
 - [CO Module](co-module)
 - [Async/Await](async-await)
+- [Using async/await with Array.prototype.map()](async-map/index.js)
 
 ## References
 
