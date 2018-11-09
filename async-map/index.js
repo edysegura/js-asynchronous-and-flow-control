@@ -1,10 +1,11 @@
 const fetch = require('node-fetch')
 
-const list = [
-  'https://swapi.co/api/people/1/',
-  'https://swapi.co/api/people/6/',
-  'https://swapi.co/api/people/12/',
-  'https://swapi.co/api/people/20/'
+const baseEndpoint = 'https://swapi.co/api/people'
+const endpointList = [
+  `${baseEndpoint}/1/`,
+  `${baseEndpoint}/6/`,
+  `${baseEndpoint}/12/`,
+  `${baseEndpoint}/20/`
 ]
 
 const requestHandler = endpoint => {
@@ -15,8 +16,10 @@ const requestHandler = endpoint => {
   })
 }
 
-const fetchedData = list.map(requestHandler)
+async function showNames(endpointList) {
+  const fetchData = endpointList.map(requestHandler)
+  const fetchedData = await Promise.all(fetchData)
+  console.log(fetchedData.map(data => data.name))
+}
 
-Promise.all(fetchedData).then(data => {
-  console.log(data.map(people => people.name))
-})
+showNames(endpointList)
