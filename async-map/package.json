@@ -1,0 +1,9 @@
+{
+  "name": "async-map",
+  "dependencies": {
+    "node-fetch": "^2.2.1"
+  },
+  "private": true,
+  "author": "Edy Segura",
+  "license": "MIT"
+}
