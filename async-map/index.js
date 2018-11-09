@@ -1,10 +1,22 @@
-const list = [{ key: 1 }, { key: 2 }, { key: 3 }]
+const fetch = require('node-fetch')
 
-const result = list.map(async item => {
-  return item.key
+const list = [
+  'https://swapi.co/api/people/1/',
+  'https://swapi.co/api/people/6/',
+  'https://swapi.co/api/people/12/',
+  'https://swapi.co/api/people/20/'
+]
+
+const requestHandler = endpoint => {
+  return new Promise(async resolve => {
+    const response = await fetch(endpoint)
+    const data = await response.json()
+    resolve(data)
+  })
+}
+
+const fetchedData = list.map(requestHandler)
+
+Promise.all(fetchedData).then(data => {
+  console.log(data.map(people => people.name))
 })
-
-console.log(`Result: ${result}`)
-
-Promise.all(result)
-  .then(completed => console.log(`Result: ${completed}`))
