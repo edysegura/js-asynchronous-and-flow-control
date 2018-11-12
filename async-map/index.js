@@ -19,7 +19,8 @@ const requestHandler = endpoint => {
 async function showNames(endpointList) {
   const fetchData = endpointList.map(requestHandler)
   const fetchedData = await Promise.all(fetchData)
-  console.log(fetchedData.map(data => data.name))
+  const characters = fetchedData.map(data => data.name)
+  console.log(characters)
 }
 
 showNames(endpointList)
