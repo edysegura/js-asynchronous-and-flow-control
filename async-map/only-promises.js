@@ -16,19 +16,11 @@ const requestHandler = endpoint => {
   })
 }
 
-<<<<<<< HEAD
-async function showNames(endpointList) {
-  const fetchData = endpointList.map(requestHandler)
-  const fetchedData = await Promise.all(fetchData)
-  const characters = fetchedData.map(data => data.name)
-  console.log(characters)
-=======
 function showNames(endpointList) {
   const fetchData = endpointList.map(requestHandler)
   Promise.all(fetchData)
     .then(fetchedData => fetchedData.map(data => data.name))
     .then(characters => console.log(characters))
->>>>>>> Added example with promises
 }
 
 showNames(endpointList)
