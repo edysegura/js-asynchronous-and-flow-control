@@ -9,10 +9,10 @@ const endpointList = [
 ]
 
 const requestHandler = endpoint => {
-  return new Promise(async resolve => {
-    const response = await fetch(endpoint)
-    const data = await response.json()
-    resolve(data)
+  return new Promise(resolve => {
+    fetch(endpoint)
+      .then(response => response.json())
+      .then(data => resolve(data))
   })
 }
 
