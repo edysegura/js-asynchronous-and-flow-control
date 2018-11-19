@@ -8,12 +8,10 @@ const endpointList = [
   `${baseEndpoint}/20/`
 ]
 
-const requestHandler = endpoint => {
-  return new Promise(async resolve => {
-    const response = await fetch(endpoint)
-    const data = await response.json()
-    resolve(data)
-  })
+const requestHandler = async endpoint => {
+  const response = await fetch(endpoint)
+  const data = await response.json()
+  return data
 }
 
 async function showNames(endpointList) {
