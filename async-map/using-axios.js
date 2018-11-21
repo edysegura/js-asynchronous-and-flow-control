@@ -8,11 +8,9 @@ const endpointList = [
   `${baseEndpoint}/20/`
 ]
 
-const requestHandler = endpoint => {
-  return new Promise(async resolve => {
-    const response = await axios.get(endpoint)
-    resolve(response.data)
-  })
+const requestHandler = async endpoint => {
+  const response = await axios.get(endpoint)
+  return response.data
 }
 
 async function showNames(endpointList) {
