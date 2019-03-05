@@ -30,6 +30,7 @@ fs.readFile(myDataFile, 'utf8', function(error, data) {
 
 ## References
 
+- [Flow Control in Modern JS: Callbacks to Promises to Async/Await](https://www.sitepoint.com/flow-control-callbacks-promises-async-await/)
 - [ES6 Promises](http://www.datchley.name/es6-promises/)
 - [kriskowal Q](https://github.com/kriskowal/q)
 - [Node.js Async Best Practice & Avoiding Callback Hell](https://blog.risingstack.com/node-js-async-best-practices-avoiding-callback-hell-node-js-at-scale/)
