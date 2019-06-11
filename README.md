@@ -30,16 +30,17 @@ fs.readFile(myDataFile, 'utf8', function(error, data) {
 
 ## References
 
-- [Flow Control in Modern JS: Callbacks to Promises to Async/Await](https://www.sitepoint.com/flow-control-callbacks-promises-async-await/)
-- [ES6 Promises](http://www.datchley.name/es6-promises/)
-- [kriskowal Q](https://github.com/kriskowal/q)
-- [Node.js Async Best Practice & Avoiding Callback Hell](https://blog.risingstack.com/node-js-async-best-practices-avoiding-callback-hell-node-js-at-scale/)
-- [Node Hero - Understanding Async Programming in Node.js](https://blog.risingstack.com/node-hero-async-programming-in-node-js/)
-- [Hands-on with CO module](https://www.youtube.com/watch?v=IXsxtIZuY90)
-- [Learn about promises before you start using async/await](https://medium.com/@bluepnume/learn-about-promises-before-you-start-using-async-await-eb148164a9c8)
 - [Async/Await in JavaScript - What, Why and How - Fun Fun Function](https://www.youtube.com/watch?v=568g8hxJJp4)
-- [Callbacks vs Promises vs RxJs Observables vs async/await](https://www.youtube.com/watch?v=jgWnccjXR4I)
 - [Callback of heaven](https://www.youtube.com/watch?v=Ir9-EBbc9fg)
+- [Callbacks vs Promises vs RxJs Observables vs async/await](https://www.youtube.com/watch?v=jgWnccjXR4I)
+- [ES6 Promises](http://www.datchley.name/es6-promises/)
+- [Flow Control in Modern JS: Callbacks to Promises to Async/Await](https://www.sitepoint.com/flow-control-callbacks-promises-async-await/)
+- [Hands-on with CO module](https://www.youtube.com/watch?v=IXsxtIZuY90)
+- [kriskowal Q](https://github.com/kriskowal/q)
+- [Learn about promises before you start using async/await](https://medium.com/@bluepnume/learn-about-promises-before-you-start-using-async-await-eb148164a9c8)
+- [Node Hero - Understanding Async Programming in Node.js](https://blog.risingstack.com/node-hero-async-programming-in-node-js/)
+- [Node.js Async Best Practice & Avoiding Callback Hell](https://blog.risingstack.com/node-js-async-best-practices-avoiding-callback-hell-node-js-at-scale/)
+- [The async/await pitfalls](https://medium.com/@oieduardorabelo/javascript-armadilhas-do-asyn-await-em-loops-1cdad44db7f0)
 
 ---
 
