@@ -1,9 +1,10 @@
 const fetch = require('node-fetch')
 
+const baseEndpoint = 'https://jsonplaceholder.typicode.com/todos'
 const endpoints = [
-  'https://jsonplaceholder.typicode.com/todos/1',
-  'https://jsonplaceholder.typicode.com/todos/2',
-  'https://jsonplaceholder.typicode.com/todos/3'
+  `${baseEndpoint}/2`,
+  `${baseEndpoint}/3`
+  `${baseEndpoint}/1`,
 ]
 
 async function fetchData(endpoint) {
