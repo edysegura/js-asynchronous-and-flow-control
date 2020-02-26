@@ -32,6 +32,7 @@ fs.readFile(myDataFile, 'utf8', function(error, data) {
 
 ## References
 
+- [Comparing Callbacks, Promises and Async/Await in TypeScript](https://johnpapa.net/async-comparisons/)
 - [Async/Await in JavaScript - What, Why and How - Fun Fun Function](https://www.youtube.com/watch?v=568g8hxJJp4)
 - [Callback of heaven](https://www.youtube.com/watch?v=Ir9-EBbc9fg)
 - [Callbacks vs Promises vs RxJs Observables vs async/await](https://www.youtube.com/watch?v=jgWnccjXR4I)
