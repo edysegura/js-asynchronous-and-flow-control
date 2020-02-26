@@ -2,6 +2,8 @@
 
 These examples demonstrate how to organize your asynchronous JavaScript code using the promises, reactive and flow-control patterns to avoid JavaScript callback hell.
 
+![JavaScript Asynchronous](js-async.png)
+
 ## JavaScript Callback Hell
 
 ```js
