@@ -1,7 +1,7 @@
 {
   "name": "async-map",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "node-fetch": "^2.2.1"
   },
   "private": true,
