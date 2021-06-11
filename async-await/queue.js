@@ -15,7 +15,7 @@ async function fetchData(endpoint) {
 
 async function getTodos() {
   const promises = endpoints.map(fetchData)
-  const results = await Promise.all(promises)
+  const results = await Promise.allSettled(promises)
 
   console.log('Finished!')
   console.log('Results', results)
