@@ -3,7 +3,7 @@ const fetch = require('node-fetch')
 const baseEndpoint = 'https://jsonplaceholder.typicode.com/todos'
 const endpoints = [
   `${baseEndpoint}/2`,
-  `${baseEndpoint}/3`
+  `${baseEndpoint}/3`,
   `${baseEndpoint}/1`,
 ]
 
