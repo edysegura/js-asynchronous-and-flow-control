@@ -21,7 +21,6 @@ fs.readFile(myDataFile, 'utf8', function(error, data) {
 
 ## Examples
 
-- [Kriskowal Q library](q-promise)
 - [ES6/2015 Promise constructor](es6-promise)
 - [ES6/2015 Promise.all method](es6-promise-all)
 - [ES6/2015 Promise.race method](es6-promise-race)
