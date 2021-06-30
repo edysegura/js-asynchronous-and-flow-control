@@ -1,24 +1,24 @@
-const fetch = require('node-fetch')
+const axios = require('axios')
 
 const baseEndpoint = 'https://jsonplaceholder.typicode.com/todos'
 const endpoints = [
   `${baseEndpoint}/2`,
   `${baseEndpoint}/3`,
   `${baseEndpoint}/1`,
+  `${baseEndpoint}/4`,
 ]
 
 async function fetchData(endpoint) {
-  const response = await fetch(endpoint)
-  const json = await response.json()
-  return json
+  const response = await axios.get(endpoint)
+  return response.data
 }
 
-async function getTodos() {
+async function getAll() {
   const promises = endpoints.map(fetchData)
   const results = await Promise.allSettled(promises)
 
   console.log('Finished!')
-  console.log('Results', results)
+  console.table(results)
 }
 
-getTodos()
+getAll()
