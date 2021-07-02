@@ -1,23 +1,20 @@
-const { promisify } = require('util');
-const fs = require('fs');
+const { readFile, writeFile, appendFile } = require('fs/promises')
 
-const readFile = promisify(fs.readFile);
-const writeFile = promisify(fs.writeFile);
-
-function readData(filename) {
-  const createMessage = data => ({ filename, data });
-  return readFile(filename, 'utf-8').then(createMessage);
+async function readData(path) {
+  const data = await readFile(path, 'utf8')
+  return { path, data }
 }
 
-function writeData(file) {
-  const data = file.data + '\nnew content';
-  const createMessage = () => ({ filename: file.filename });
-  return writeFile(file.filename, data).then(createMessage);
+async function writeData(file) {
+  const data = file.data + '\nnew content'
+  await writeFile(file.path, data)
+  return { path: file.path, data }
 }
 
-function addToLog(data) {
-  const logMessage = `${data.filename} has been changed`
-  return writeFile('my-log.txt', logMessage)
+async function addToLog(file) {
+  const date = new Date().toISOString()
+  const logMessage = `[${date}] '${file.path}' has been changed\n`
+  return appendFile('../data/myLog.txt', logMessage)
 }
 
 function notifyOnSuccess() {
@@ -25,19 +22,18 @@ function notifyOnSuccess() {
 }
 
 function notifyOnError(error) {
-  console.log('Process has been failed: ')
-  console.log(error.message)
+  console.log('Process has been failed: ', error.message)
 }
 
 async function main() {
   try {
-    const file = await readData('my-file.txt');
-    const result = await writeData(file);
-    await addToLog(result);
-    notifyOnSuccess();
+    const file = await readData('../data/myData.txt')
+    await writeData(file)
+    await addToLog(file)
+    notifyOnSuccess()
   } catch (error) {
-    notifyOnError(error);
+    notifyOnError(error)
   }
 }
 
-main();
+main()
