@@ -1,4 +1,4 @@
-const axios = require('axios')
+import axios from 'axios'
 
 const baseEndpoint = 'https://pokeapi.co/api/v2/pokemon'
 const endpoints = [
@@ -12,11 +12,11 @@ async function fetchData(endpoint) {
   return response.data
 }
 
-async function listSelectedPokemons() {
-  for (const endpoint of endpoints) {
-    const data = await fetchData(endpoint)
+async function listSelectedPokemon() {
+  const promises = endpoints.map(fetchData)
+  for await (const data of promises) {
     console.log(data.name)
   }
 }
 
-listSelectedPokemons()
+listSelectedPokemon()
