@@ -1,20 +1,20 @@
 const promises = [
   new Promise(resolve => resolve(1)),
-  new Promise(resolve => resolve(2)),
+  new Promise(resolve => setTimeout(() => resolve(2), 100)),
   new Promise(resolve => resolve(3))
 ]
 
-async function test1() {
+async function loopingDirect() {
   for (const item of promises) {
     console.log(item)
   }
 }
 
-async function test2() {
+async function loopingForAwait() {
   for await (const item of promises) {
     console.log(item)
   }
 }
 
-test1()
-test2()
+loopingDirect()
+loopingForAwait()
