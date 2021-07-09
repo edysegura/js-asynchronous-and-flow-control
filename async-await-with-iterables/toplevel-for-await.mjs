@@ -5,5 +5,6 @@ const asyncIterable = [
 ]
 
 for await (const value of asyncIterable) {
-  console.log(value)
+  console.log('➡', value)
 }
+
