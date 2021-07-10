@@ -1,7 +1,11 @@
+function promiseFactory(value, delay = 0) {
+  return new Promise(resolve => setTimeout(() => resolve(value), delay))
+}
+
 const promises = [
-  new Promise(resolve => setTimeout(() => resolve(1), 500)),
-  new Promise(resolve => setTimeout(() => resolve(2), 300)),
-  new Promise(resolve => setTimeout(() => resolve(3), 100))
+  promiseFactory('a', 100),
+  promiseFactory('b', 1000),
+  promiseFactory('c'),
 ]
 
 async function loopingDirect() {
