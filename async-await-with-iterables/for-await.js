@@ -1,7 +1,7 @@
 const promises = [
-  new Promise(resolve => resolve(1)),
-  new Promise(resolve => setTimeout(() => resolve(2), 100)),
-  new Promise(resolve => resolve(3))
+  new Promise(resolve => setTimeout(() => resolve(1), 500)),
+  new Promise(resolve => setTimeout(() => resolve(2), 300)),
+  new Promise(resolve => setTimeout(() => resolve(3), 100))
 ]
 
 async function loopingDirect() {
