@@ -3,9 +3,9 @@ import axios from 'axios'
 function buildEndpoints() {
   const baseEndpoint = 'https://pokeapi.co/api/v2/pokemon'
   const endpoints = [
-    `${baseEndpoint}/1`,
-    `${baseEndpoint}/2`,
-    `${baseEndpoint}/3`,
+    `${baseEndpoint}/4`,
+    `${baseEndpoint}/5`,
+    `${baseEndpoint}/6`,
   ]
   return endpoints
 }
