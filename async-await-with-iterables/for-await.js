@@ -5,7 +5,7 @@ function promiseFactory(value, delay = 0) {
 const promises = [
   promiseFactory('a', 100),
   promiseFactory('b', 1000),
-  promiseFactory('c'),
+  promiseFactory('c', 10),
 ]
 
 async function loopingDirect() {

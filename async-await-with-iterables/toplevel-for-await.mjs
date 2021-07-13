@@ -1,7 +1,11 @@
+function promiseFactory(value, delay = 0) {
+  return new Promise(resolve => setTimeout(() => resolve(value), delay))
+}
+
 const asyncIterable = [
-  Promise.resolve('a'),
-  Promise.resolve('b'),
-  Promise.resolve('c')
+  promiseFactory('a', 900),
+  promiseFactory('b', 200),
+  promiseFactory('c', 300)
 ]
 
 for await (const value of asyncIterable) {
