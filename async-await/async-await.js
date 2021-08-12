@@ -1,4 +1,4 @@
-const { readFile, writeFile, appendFile } = require('fs/promises')
+import { readFile, writeFile, appendFile } from  'fs/promises'
 
 async function readData(path) {
   const data = await readFile(path, 'utf8')
