@@ -1,16 +1,10 @@
-const promiseFactory = (name, time) => {
-    return new Promise((resolve) => {
-        setTimeout(() => resolve(name + ' ' + time), time)
-    })
-}
+import { promiseFactory, randomTime } from './promise-factory.js';
 
-const randomTime = () => (""+Math.random()).substr(2,2)
-
-Promise.race([
+const firstResponse = await Promise.race([
     promiseFactory('Promise 1', randomTime()),
     promiseFactory('Promise 2', randomTime()),
     promiseFactory('Promise 3', randomTime()),
     promiseFactory('Promise 4', randomTime())
 ])
-.then(data => console.log(data))
-.catch(error => console.log(error))
+
+console.log(firstResponse)
