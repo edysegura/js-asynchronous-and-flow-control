@@ -1,4 +1,4 @@
-import { promiseFactory, randomTime } from './promise-factory.js';
+import { promiseFactory, randomTime } from './promise-factory.mjs';
 
 const firstResponse = await Promise.race([
     promiseFactory('Promise 1', randomTime()),
