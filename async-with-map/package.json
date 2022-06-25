@@ -2,7 +2,7 @@
   "name": "async-map",
   "dependencies": {
     "axios": "^0.21.1",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.7"
   },
   "private": true,
   "author": "Edy Segura",
