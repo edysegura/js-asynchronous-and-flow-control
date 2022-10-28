@@ -26,4 +26,16 @@ async function getPokemonData(pokeId) {
   return response.data.name;
 }
 
-console.log(await getPokemonData(1));
+const responses = await Promise.allSettled([
+  getPokemonData(1),
+  getPokemonData(2),
+  getPokemonData(3),
+  Promise.reject("this should fail!"),
+  getPokemonData(4),
+  getPokemonData(5),
+  getPokemonData(6),
+]);
+
+responses.forEach((response) =>
+  console.log(`[${response.status}] - ${response.value || response.reason}`)
+);
