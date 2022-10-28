@@ -10,13 +10,12 @@ const endpoints = [
 
 async function fetchData(endpoint) {
   const response = await axios.get(endpoint)
-  return response.data
+  return response.data.completed
 }
 
 async function getAll() {
   const promises = endpoints.map(fetchData)
   const results = await Promise.allSettled(promises)
-
   console.log('Finished!')
   console.table(results)
 }
