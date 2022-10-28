@@ -18,24 +18,22 @@
  *
  */
 
-import axios from "axios";
+import axios from 'axios'
 
 async function getPokemonData(pokeId) {
-  const endpoint = `https://pokeapi.co/api/v2/pokemon/${pokeId}`;
-  const response = await axios.get(endpoint);
-  return response.data.name;
+  const endpoint = `https://pokeapi.co/api/v2/pokemon/${pokeId}`
+  const response = await axios.get(endpoint)
+  return response.data.name
 }
 
 const responses = await Promise.allSettled([
   getPokemonData(1),
   getPokemonData(2),
   getPokemonData(3),
-  Promise.reject("this should fail!"),
+  Promise.reject('this should fail!'),
   getPokemonData(4),
   getPokemonData(5),
   getPokemonData(6),
-]);
+])
 
-responses.forEach((response) =>
-  console.log(`[${response.status}] - ${response.value || response.reason}`)
-);
+console.table(responses)
